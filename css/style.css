@@ -1,0 +1,216 @@
+@import './reset.css';
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
+
+* {
+  box-sizing: border-box; /* 요소의 width에 여백을 포함 */
+}
+
+html {
+  scroll-behavior: smooth; /* 부드러운 스크롤 */
+}
+
+body {
+  font-size: 16px;
+  font-family: "Pretendard"; /* 전체 프로젝트에서 사용할 폰트 설정 */
+  letter-spacing: -0.2px;
+  color: #47494d;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+    width:100vw;
+    height:72px;
+    padding: 0 40px;
+    background-color: #ffe494;
+    position: fixed;
+    z-index: 10;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 img{
+  width:131px;
+}
+
+.nav-list{
+  gap:32px;
+  display:flex;
+  list-style: none;
+}
+
+main section{
+  padding: 200px 0;
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+
+#home{
+  position:relative;
+  background-color: #ffe494;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#home .tit-descript{
+  font-size: 80px;
+    font-weight: 200;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+#home.tit-descript strong{
+  font-size: 120px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+
+.profile{
+  width:500px;
+}
+
+.scroll-link{
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+main .tit{
+  color: #ff3440;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+#about {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#about p {
+  text-align: center;
+}
+
+#about p.descript{
+  font-size: 28px;
+  line-height : 1.2;
+}
+
+#about p.additional-info{
+  line-height : 1.2;
+}
+
+
+#activity {
+  width:80%;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+
+.activ-list {
+  padding-left: 24px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 24px;
+    list-style: disc;
+}
+
+.active-tit{
+  font-size: 24px;
+  font-weight:500;
+  line-height: 1.5;
+}
+
+.activ-img-list{
+
+  display: flex;
+  gap:72px;
+  overflow-x:auto ;
+  overflow-y:hidden;
+  list-style:none;
+  padding:24px 0;
+}
+
+.activ-img-list img{
+  border-radius: 20px;
+  width:400px;
+  box-shadow: 0 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+#contact{
+  width: 80%;
+}
+
+.contact-cont{
+  background-color: #dee8ff;
+  padding:50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap:18px;
+}
+
+#contact .tit{
+  font-size:36px;
+  font-weight:400;
+  color:inherit;
+}
+
+
+.contact-cont .descript{
+  width:80%;
+  line-height:1.4;
+}
+
+.contact-box{
+  margin-left: auto;
+  
+display: flex;
+  gap: 24px;
+}
+
+.contact-box div {
+  margin: 60px 0 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background-color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+}
+
+footer {
+  border-top: 1px solid #8d9299;
+  width: Calc(100% - 20px);
+  margin: auto;
+  height: 72px;
+  color: #8d9299;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
